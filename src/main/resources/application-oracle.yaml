@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    hikari:
+      maximumPoolSize: 1
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@10.10.2.97:1521:harli2
+    username: SCORING
+    password: P3rkasa321
+  jpa:    
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true    
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+      platform: oracle
