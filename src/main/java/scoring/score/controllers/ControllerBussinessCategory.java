@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,11 +23,29 @@ public class ControllerBussinessCategory {
 	@Autowired
 	ServiceBussinessCategory servBussCat;
 	
-	@GetMapping("/getbusscat")
+	@GetMapping("/getbusscatlist")
 	public List<BussinessCategory> getBussCat(){
 		return servBussCat.getBussCat();
 	}
 	
+	@GetMapping("/getbusscatid")
+	public Optional<BussinessCategory> getByBussCatId(Integer bcId) {
+		return servBussCat.getByBussCatId(bcId);
+	}
 	
+	@PostMapping("/submitBussCat")
+	@Transactional
+	public String addupdateBussCat(@RequestBody  BussinessCategory bussCat) {
+		System.out.println("begi........n :"+bussCat.getBctBussCategory());
+		BussinessCategory bcat=servBussCat.addupdateBussCat(bussCat);
+		System.out.println("end.....:"+bcat.getBtcId());
+		return "Update Successfully";
+	}
+	
+	@DeleteMapping("/deleteBussCat")
+	public String deleteBussCat(Integer bcId) {
+		return servBussCat.deleteBussCat(bcId);
+	}
+		
 
 }
