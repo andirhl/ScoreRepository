@@ -36,9 +36,9 @@ public class ControllerBussinessCategory {
 	@PostMapping("/submitBussCat")
 	@Transactional
 	public String addupdateBussCat(@RequestBody  BussinessCategory bussCat) {
-		System.out.println("begi........n :"+bussCat.getBctBussCategory());
+		//System.out.println("begi........n :"+bussCat.getBctBussCategory());
 		BussinessCategory bcat=servBussCat.addupdateBussCat(bussCat);
-		System.out.println("end.....:"+bcat.getBtcId());
+		//System.out.println("end.....:"+bcat.getBtcId());
 		return "Update Successfully";
 	}
 	
