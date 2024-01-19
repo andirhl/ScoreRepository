@@ -39,7 +39,7 @@ public class ControllerBussinessCategory {
 		//System.out.println("begi........n :"+bussCat.getBctBussCategory());
 		BussinessCategory bcat=servBussCat.addupdateBussCat(bussCat);
 
-		System.out.println("end.....:"+bcat.getBtcId());
+		//System.out.println("end.....:"+bcat.getBtcId());
 		return "Submit Successfully";
 
 		//System.out.println("end.....:"+bcat.getBtcId());
