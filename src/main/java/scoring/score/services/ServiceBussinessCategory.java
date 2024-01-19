@@ -26,14 +26,14 @@ public class ServiceBussinessCategory {
 	}
 
 	public BussinessCategory addupdateBussCat(BussinessCategory bussCat) {
-		System.out.println(bussCat.getBctBussCategory()+" - "+bussCat.getBtcId());
+		//System.out.println(bussCat.getBctBussCategory()+" - "+bussCat.getBtcId());
 		return repoBussCat.save(bussCat);
 		//return "Submit Successfully";
 	}
 	
 	public String deleteBussCat(Integer bcId) {
 		repoBussCat.deleteById(bcId);
-		return "Successfully Update";
+		return "Successfully Delete";
 	}
 	
 	
