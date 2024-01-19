@@ -33,7 +33,7 @@ public class ServiceBussinessCategory {
 	
 	public String deleteBussCat(Integer bcId) {
 		repoBussCat.deleteById(bcId);
-		return "Successfully Update";
+		return "Successfully Delete";
 	}
 	
 	
