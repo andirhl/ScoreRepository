@@ -25,7 +25,7 @@ public class MsBaseQuery {
 	@Column (name="MBQ_NAME",length=60,  nullable = false)
 	private String mbqName;
 	
-	@Column (name="MBQ_QUERY", nullable = false)
+	@Column (name="MBQ_QUERY",length=2000, nullable = false)
 	private String mbqQuery;
 	
 	@Column (name="MBQ_VISIBLE",length=1,  nullable = false)
