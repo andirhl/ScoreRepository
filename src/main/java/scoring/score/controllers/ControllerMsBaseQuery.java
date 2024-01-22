@@ -35,7 +35,7 @@ public class ControllerMsBaseQuery {
 	@Transactional
 	public String addupdateMsBaseQuery(@RequestBody  MsBaseQuery BaseQuery) {
 		//System.out.println("begi........n :"+msTable.getMstMsTable());
-		MsBaseQuery mtab=servBaseQuery.addupdateMsBaseQuery(BaseQuery);
+		MsBaseQuery mbase=servBaseQuery.addupdateMsBaseQuery(BaseQuery);
 		//System.out.println("end.....:"+mtab.getMsId());
 		return "Update Successfully";
 	}
