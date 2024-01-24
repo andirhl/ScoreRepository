@@ -27,6 +27,9 @@ public class BussinessCategory {
 	@Column (name="BCT_BUSSINESS_CATEGORY",length=60,  nullable = false)
 	private String bctBussCategory;
 	
+	@Column (name="BCT_VISIBLE",length=1,  nullable = false)
+	private String bctVisible;
+	
 	@Column (name="BCT_CREATED_USER",length=60)
 	private String bctCreatedUser;
 	

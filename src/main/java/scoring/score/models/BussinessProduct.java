@@ -33,6 +33,9 @@ public class BussinessProduct {
 	@Column (name="BPR_PLATFORM", length=1)
 	private String brpPlatform;
 	
+	@Column (name="BPR_VISIBLE", length=1)
+	private String brpVisible;
+	
 	@Column (name="BPR_CREATED_USER",length=40)
 	private String brpCreateUser;
 	

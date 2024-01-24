@@ -16,8 +16,6 @@ import org.yaml.snakeyaml.events.Event.ID;
 import scoring.score.models.BussinessCategory;
 import scoring.score.services.ServiceBussinessCategory;
 
-
-
 @RestController
 public class ControllerBussinessCategory {
 	@Autowired

@@ -5,8 +5,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import scoring.score.models.BussinessCategory;
 
-
-
 @Repository
 public interface IBussinessCategoryRepository extends JpaRepository<BussinessCategory, Integer> {
 
