@@ -41,7 +41,5 @@ public class BussinessCategory {
 	
 	@Column (name="BCT_UPDATED_DATE")
 	private Date bctUpdatedDate;
-	
-	
 
 }

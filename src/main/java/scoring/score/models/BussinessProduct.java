@@ -21,10 +21,10 @@ import java.util.Date;
 
 public class BussinessProduct {
 	@Id
-	@Column (name="BRP_ID", nullable = false)
+	@Column (name="BPR_ID", nullable = false)
 	private Integer brpId;
 	
-	@Column (name="BRP_BCT_ID", nullable = false)
+	@Column (name="BPR_BCT_ID", nullable = false)
 	private Integer brpBctId;
 	
 	@Column (name="BPR_PRODUCT_NAME", length=60)
@@ -39,13 +39,13 @@ public class BussinessProduct {
 	@Column (name="BPR_CREATED_USER",length=40)
 	private String brpCreateUser;
 	
-	@Column (name="BRP_CREATED_DATE")
+	@Column (name="BPR_CREATED_DATE")
 	private Date brpCreatedDate;
 	
-	@Column (name="BRP_UPDATED_USER",length=40)
+	@Column (name="BPR_UPDATED_USER",length=40)
 	private String brpUpdatedUser;
 	
-	@Column (name="BRP_UPDATED_DATE")
+	@Column (name="BPR_UPDATED_DATE")
 	private Date brpUpdatedDate;	
 
 }
