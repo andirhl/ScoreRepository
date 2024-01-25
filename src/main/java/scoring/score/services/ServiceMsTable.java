@@ -7,8 +7,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
-import scoring.score.models.BussinessCategory;
 import scoring.score.models.MsTable;
 import scoring.score.repository.IMsTableRepository;
 

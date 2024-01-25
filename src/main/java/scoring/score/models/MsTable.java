@@ -23,10 +23,10 @@ public class MsTable {
 	@Column (name="MST_ID")
 	private Integer mstId;
 	
-	@Column (name="MST_NAME",length=60,  nullable = false)
+	@Column (name="MST_NAME",length=60)
 	private String mstName;
 	
-	@Column (name="MST_CREATED_USER",length=60,  nullable = false)
+	@Column (name="MST_CREATED_USER",length=60, nullable = false)
 	private String mstCreatedUser;
 	
 	@Column (name="MST_CREATED_DATE")
