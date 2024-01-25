@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.yaml.snakeyaml.events.Event.ID;
 
-import scoring.score.models.BussinessCategory;
 import scoring.score.models.MsTable;
-import scoring.score.services.ServiceBussinessCategory;
 import scoring.score.services.ServiceMsTable;
 
 @RestController
