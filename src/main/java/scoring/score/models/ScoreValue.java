@@ -19,7 +19,7 @@ import java.util.Date;
 public class ScoreValue {
 	@Id
 	@Column (name="SCSC_ID")
-	private Long scscId;
+	private Integer scscId;
 	
 	@Column (name="SCSC_BCT_ID")
 	private Integer scscBctId;
@@ -30,7 +30,7 @@ public class ScoreValue {
 	@Column (name="SCSC_DESC", length=60)
 	private String scscBprDesc;
 	
-	@Column (name="SCSC_TYPE", length=1)
+	@Column (name="SCSC_TYPE")
 	private String scscType;
 	
 	@Column (name="SCSC_SCIN_ID", length=1)

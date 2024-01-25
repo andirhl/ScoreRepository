@@ -11,7 +11,9 @@ import scoring.score.models.ScoreValue;
 
 @Repository
 
-public interface IScoreValueRepository extends  JpaRepository<ScoreValue,Long> {
-	List<ScoreValue> findByScscBctIdAndScscBprIdAndScscType(Integer bctId, Integer bprId, Integer typee);
+public interface IScoreValueRepository extends  JpaRepository<ScoreValue,Integer> {
+	
+	@Query("select s from ScoreValue s where s.scscBctId=1 and s.scscBprId=2 ")
+	List<ScoreValue> findScoreValue(Integer bctId, Integer bprId, String typee);
 	
 }

@@ -25,7 +25,7 @@ public class ControllerScoreValue {
 	ServiceScoreValue servScVal;
 	
 	@GetMapping("/scorevaluelist")
-	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, Integer typee){
+	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
 		return servScVal.getScoreValueList(bctId, bprId, typee);
 	}
 	
