@@ -36,9 +36,5 @@ public class ServiceMsTableColumn {
 		repoMsTableColumn.deleteById(mstcId);
 		return "Successfully Update";
 	}
-	
-	public List <MsTableColumn> findByMstcIdAndMstcMsId(Integer mstcId, Integer mstcmsId) {
-		return repoMsTableColumn.findByMstcIdAndMstcMsId(mstcId, mstcmsId);
-	}
 
 }

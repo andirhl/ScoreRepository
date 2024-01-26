@@ -11,9 +11,5 @@ import scoring.score.models.MsTableColumn;
 
 @Repository
 public interface IMsTableColumnRepository extends JpaRepository<MsTableColumn, Integer> {
-	
-	@Query
-	("select s from MsTableColumn s where s.mstcId=1 and s.mstcmstId=2")
-	public List <MsTableColumn> findByMstcIdAndMstcMsId(Integer mstcId, Integer mstcmstId);
 
 }
