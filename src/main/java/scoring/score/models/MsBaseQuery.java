@@ -15,7 +15,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name= "MS_BASE_QUERY")
-
 public class MsBaseQuery {
 	
 	@Id
