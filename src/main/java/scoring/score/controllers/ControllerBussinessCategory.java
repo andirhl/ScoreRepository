@@ -45,9 +45,14 @@ public class ControllerBussinessCategory {
 
 	}
 	
-	@DeleteMapping("/deleteBussCat")
+	
 	public String deleteBussCat(Integer bcId) {
 		return servBussCat.deleteBussCat(bcId);
+	}
+	
+	@GetMapping("/getbusscatname")
+	public String getBussCatName(Integer bcId) {
+		return servBussCat.getBussCatName(bcId);
 	}
 		
 

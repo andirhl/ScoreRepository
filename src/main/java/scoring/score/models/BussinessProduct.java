@@ -22,30 +22,30 @@ import java.util.Date;
 public class BussinessProduct {
 	@Id
 	@Column (name="BPR_ID", nullable = false)
-	private Integer brpId;
+	private Integer bprId;
 	
 	@Column (name="BPR_BCT_ID", nullable = false)
-	private Integer brpBctId;
+	private Integer bprBctId;
 	
 	@Column (name="BPR_PRODUCT_NAME", length=60)
-	private String brpProdName;
+	private String bprProdName;
 	
 	@Column (name="BPR_PLATFORM", length=1)
-	private String brpPlatform;
+	private String bprPlatform;
 	
 	@Column (name="BPR_VISIBLE", length=1)
-	private String brpVisible;
+	private String bprVisible;
 	
 	@Column (name="BPR_CREATED_USER",length=40)
-	private String brpCreateUser;
+	private String bprCreateUser;
 	
 	@Column (name="BPR_CREATED_DATE")
-	private Date brpCreatedDate;
+	private Date bprCreatedDate;
 	
 	@Column (name="BPR_UPDATED_USER",length=40)
-	private String brpUpdatedUser;
+	private String bprUpdatedUser;
 	
 	@Column (name="BPR_UPDATED_DATE")
-	private Date brpUpdatedDate;	
+	private Date bprUpdatedDate;	
 
 }

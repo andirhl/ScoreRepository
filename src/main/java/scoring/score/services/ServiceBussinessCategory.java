@@ -36,5 +36,9 @@ public class ServiceBussinessCategory {
 		return "Successfully Delete";
 	}
 	
+	public String getBussCatName(Integer id) {
+		return repoBussCat.getBussCatDesc(id);
+	}
+	
 	
 }

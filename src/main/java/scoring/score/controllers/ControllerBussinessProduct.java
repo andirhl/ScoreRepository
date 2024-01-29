@@ -30,8 +30,8 @@ public class ControllerBussinessProduct {
 	}
 	
 	@GetMapping("/getbussproid")
-	public Optional<BussinessProduct> getByBussProId(Integer bcId) {
-		return servBussPro.getByBussProId(bcId);
+	public Optional<BussinessProduct> getByBussProId(Integer bpId) {
+		return servBussPro.getByBussProId(bpId);
 	}
 	
 	@PostMapping("/submitbusspro")
@@ -42,8 +42,13 @@ public class ControllerBussinessProduct {
 	}
 	
 	@DeleteMapping("/deletebusspro")
-	public String deleteBussPro(Integer bcId) {
-		return servBussPro.deleteBussCat(bcId);
+	public String deleteBussPro(Integer bpId) {
+		return servBussPro.deleteBussCat(bpId);
+	}
+	
+	@GetMapping("/getbussproname")
+	public String getBussCatName(Integer bpId) {
+		return servBussPro.getBussCatName(bpId);
 	}
 
 }

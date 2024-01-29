@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.yaml.snakeyaml.events.Event.ID;
 
 import scoring.score.models.MsTableColumn;
+import scoring.score.models.MsTableColumnCompKey;
 import scoring.score.services.ServiceMsTableColumn;
 
 @RestController
@@ -27,10 +28,7 @@ public class ControllerMsTableColumn {
 		return servMsTableColumn.getMsTableColumn();
 	}
 
-	@GetMapping("/getmstcid")
-	public Optional<MsTableColumn> getByMstcId(Integer mstcId) {
-		return servMsTableColumn.getByMstcId(mstcId);
-	}
+
 	
 	@PostMapping("/submitMsTableColumn")
 	@Transactional
@@ -42,8 +40,8 @@ public class ControllerMsTableColumn {
 	}
 	
 	@DeleteMapping("/deleteMsTableColumn")
-	public String deleteMsTableColumn(Integer mstcId) {
-		return servMsTableColumn.deleteMstTableColumn(mstcId);
+	public String deleteMsTableColumn(MsTableColumnCompKey msTableColumnCompKey) {
+		return servMsTableColumn.deleteMstTableColumn(msTableColumnCompKey);
 	}
 	
 	@GetMapping("/findbymstcidandmstcmsid")

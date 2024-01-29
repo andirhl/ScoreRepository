@@ -20,17 +20,21 @@ public class ServiceBussinessProduct {
 		return repoBussPro.findAll();		
 	}
 	
-	public Optional<BussinessProduct> getByBussProId(Integer bcId) {
-		return repoBussPro.findById(bcId);
+	public Optional<BussinessProduct> getByBussProId(Integer bpId) {
+		return repoBussPro.findById(bpId);
 	}
 
 	public BussinessProduct addupdateBussPro(BussinessProduct bussPro) {		
 		return repoBussPro.save(bussPro);		
 	}
 	
-	public String deleteBussCat(Integer bcId) {
-		repoBussPro.deleteById(bcId);
+	public String deleteBussCat(Integer bpId) {
+		repoBussPro.deleteById(bpId);
 		return "Successfully Delete";
+	}
+	
+	public String getBussCatName(Integer bpId) {
+		return repoBussPro.getBussProdDesc(bpId);
 	}
 
 }

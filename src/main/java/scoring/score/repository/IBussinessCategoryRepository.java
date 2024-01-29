@@ -7,5 +7,8 @@ import scoring.score.models.BussinessCategory;
 
 @Repository
 public interface IBussinessCategoryRepository extends JpaRepository<BussinessCategory, Integer> {
+	
+	@Query ("select s.bctBussCategory from BussinessCategory s where btcId=?1")
+	public String getBussCatDesc (Integer id);
 
 }

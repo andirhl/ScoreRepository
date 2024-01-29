@@ -16,4 +16,5 @@ public interface IScoreValueRepository extends  JpaRepository<ScoreValue,Integer
 	@Query("select s from ScoreValue s where s.scscBctId=1 and s.scscBprId=2 ")
 	List<ScoreValue> findScoreValue(Integer bctId, Integer bprId, String typee);
 	
+	
 }
