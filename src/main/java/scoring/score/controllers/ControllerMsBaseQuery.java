@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import scoring.score.models.MsBaseQuery;
-import scoring.score.models.MsTable;
 import scoring.score.services.ServiceMsBaseQuery;
 
 @RestController
@@ -23,7 +22,8 @@ public class ControllerMsBaseQuery {
 	
 	@GetMapping("/getbasequery")
 	public List<MsBaseQuery> getBaseQuery(){
-		return servBaseQuery.getBaseQuery();
+		var buf = servBaseQuery.getBaseQuery();
+		return buf;
 	}
 	
 	@GetMapping("/getbasequeryid")

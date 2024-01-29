@@ -16,14 +16,12 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name= "MS_TABLE_COLUMN")
-@IdClass(MsTableColumnCompKey.class)
 
 public class MsTableColumn {
 	@Id
 	@Column (name="MSTC_ID")
 	private Integer mstcId;
 	
-	@Id
 	@Column (name="MSTC_MST_ID")
 	private Integer mstcmstId;
 	
