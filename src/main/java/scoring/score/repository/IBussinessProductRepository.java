@@ -8,6 +8,6 @@ import scoring.score.models.BussinessProduct;
 
 @Repository
 public interface IBussinessProductRepository extends JpaRepository<BussinessProduct, Integer> {
-	@Query("select s.bprProdName from BussinessProduct s where s.bprId=?1 ")
+	@Query("select s.bprProdName from BussinessProduct s where s.bprId=?1 and s.bprVisible='Y'")
 	public String getBussProdDesc(Integer bpId);
 }
