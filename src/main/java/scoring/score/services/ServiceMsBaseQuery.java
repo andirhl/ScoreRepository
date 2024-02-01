@@ -33,4 +33,5 @@ public class ServiceMsBaseQuery {
 		repoBaseQuery.deleteById(mbqId);
 		return "Successfully Update";
 	}
+	
 }

@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import scoring.score.models.MsBaseQuery;
 import scoring.score.models.ScoringInitation;
 import scoring.score.repository.IScoringInitationRepository;
 

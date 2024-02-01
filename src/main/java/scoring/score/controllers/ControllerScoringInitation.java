@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import scoring.score.models.MsBaseQuery;
-import scoring.score.models.MsTable;
 import scoring.score.models.ScoringInitation;
-import scoring.score.services.ServiceMsTable;
 import scoring.score.services.ServiceScoringInitation;
 
 @RestController
