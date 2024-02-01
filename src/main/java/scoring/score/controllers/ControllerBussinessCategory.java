@@ -22,8 +22,8 @@ public class ControllerBussinessCategory {
 	ServiceBussinessCategory servBussCat;
 	
 	@GetMapping("/getbusscatlist")
-	public List<BussinessCategory> getBussCat(){
-		return servBussCat.getBussCat();
+	public List<BussinessCategory> getBussCat(String vis){
+		return servBussCat.getBussCat(vis);
 	}
 	
 	@GetMapping("/getbusscatid")

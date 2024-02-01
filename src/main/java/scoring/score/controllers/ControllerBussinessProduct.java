@@ -25,8 +25,13 @@ public class ControllerBussinessProduct {
 	ServiceBussinessProduct servBussPro;
 	
 	@GetMapping("/getBussProdList")	
-	public List<BussinessProduct> getBussProdList(){
-		return servBussPro.getBussProdList();		
+	public List<BussinessProduct> getBussProdList(Integer bcat, String vis){
+		return servBussPro.getBussProdList(bcat, vis);		
+	}
+	
+	@GetMapping("/getBussProdMList")	
+	public List<BussinessProduct> getBussProdList( String vis){
+		return servBussPro.getBussProdMList(vis);
 	}
 	
 	@GetMapping("/getbussproid")

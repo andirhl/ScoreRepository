@@ -24,10 +24,10 @@ public class ControllerScoreValue {
 	@Autowired
 	ServiceScoreValue servScVal;
 	
-	@GetMapping("/scorevaluelist")
-	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
-		return servScVal.getScoreValueList(bctId, bprId, typee);
-	}
+	//@GetMapping("/scorevaluelist")
+	//public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
+		//return servScVal.getScoreValueList(bctId, bprId, typee);
+	//}
 	
 
 }

@@ -17,8 +17,8 @@ public class ServiceBussinessCategory {
 	@Autowired
 	IBussinessCategoryRepository repoBussCat;
 	
-	public List<BussinessCategory> getBussCat(){
-		return repoBussCat.findAll();
+	public List<BussinessCategory> getBussCat(String vis){
+		return repoBussCat.findByBctVisible(vis);
 	}
 	
 	public Optional<BussinessCategory> getByBussCatId(Integer bcId) {

@@ -51,10 +51,10 @@ public class ScoreValue {
 	@Column (name="SCSC_CREATED_DATE", length=1)
 	private Date scscCreatedDate;
 	
-	@Column (name="SCSC_UPDATE_BY", length=30)
+	@Column (name="SCSC_UPDATED_BY", length=30)
 	private String scscUpdatedBy;
 	
-	@Column (name="SCSC_UPDATE_DATE", length=1)
+	@Column (name="SCSC_UPDATED_DATE", length=1)
 	private String scscUpdatedDate;
 
 }

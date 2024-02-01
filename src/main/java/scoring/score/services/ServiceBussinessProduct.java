@@ -16,9 +16,14 @@ public class ServiceBussinessProduct {
 	@Autowired
 	IBussinessProductRepository repoBussPro;
 	
-	public List<BussinessProduct> getBussProdList(){
-		return repoBussPro.findAll();		
+	public List<BussinessProduct> getBussProdList(Integer bcat, String vis){
+		return repoBussPro.findByBprBctIdAndBprVisible(bcat, vis );		
 	}
+	
+	public List<BussinessProduct> getBussProdMList(String vis){
+		return repoBussPro.findByBprVisible(vis);	
+	}	
+	
 	
 	public Optional<BussinessProduct> getByBussProId(Integer bpId) {
 		return repoBussPro.findById(bpId);
