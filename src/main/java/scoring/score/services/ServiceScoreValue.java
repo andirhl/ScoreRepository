@@ -17,8 +17,8 @@ public class ServiceScoreValue {
 	@Autowired
 	IScoreValueRepository repoScoVal;
 	
-	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId){
-		return repoScoVal.findByScscBctIdAndScscBprId(bctId, bprId);
+	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
+		return repoScoVal.findByScscBctIdAndScscBprIdAndScscType(bctId, bprId, typee );
 	}
 	
 	

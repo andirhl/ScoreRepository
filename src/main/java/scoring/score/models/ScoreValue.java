@@ -33,10 +33,10 @@ public class ScoreValue {
 	@Column (name="SCSC_TYPE")
 	private String scscType;
 	
-	@Column (name="SCSC_SCIN_ID", length=1)
+	@Column (name="SCSC_SCIN_ID")
 	private String scscScinId;
 	
-	@Column (name="SCSC_SCORE", length=1)
+	@Column (name="SCSC_SCORE")
 	private Integer scscScore;
 	
 	@Column (name="SCSC_MULTI", length=1)
@@ -48,13 +48,13 @@ public class ScoreValue {
 	@Column (name="SCSC_CREATED_BY", length=30)
 	private String scscCreatedBy;
 	
-	@Column (name="SCSC_CREATED_DATE", length=1)
+	@Column (name="SCSC_CREATED_DATE")
 	private Date scscCreatedDate;
 	
 	@Column (name="SCSC_UPDATED_BY", length=30)
 	private String scscUpdatedBy;
 	
-	@Column (name="SCSC_UPDATED_DATE", length=1)
-	private String scscUpdatedDate;
+	@Column (name="SCSC_UPDATED_DATE")
+	private Date scscUpdatedDate;
 
 }

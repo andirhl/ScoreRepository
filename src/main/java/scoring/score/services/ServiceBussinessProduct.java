@@ -24,7 +24,6 @@ public class ServiceBussinessProduct {
 		return repoBussPro.findByBprVisible(vis);	
 	}	
 	
-	
 	public Optional<BussinessProduct> getByBussProId(Integer bpId) {
 		return repoBussPro.findById(bpId);
 	}
