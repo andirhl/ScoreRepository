@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import scoring.score.models.BussinessProduct;
 import scoring.score.models.ScoringInitation;
 import scoring.score.repository.IScoringInitationRepository;
 
@@ -17,6 +18,10 @@ public class ServiceScoringInitation {
 	
 	public List<ScoringInitation> getScorInitation(){
 		return RepoScoringInitation.findAll();
+	}
+	
+	public List<ScoringInitation> getScorInitVis(Integer ScorId, String vis){
+		return RepoScoringInitation.findByScinIdAndScinVisible(ScorId, vis);		
 	}
 	
 	public Optional<ScoringInitation> getScorInitationId(Integer scinId) {
@@ -32,6 +37,10 @@ public class ServiceScoringInitation {
 	public String deleteScoringInitation(Integer scinId) {
 		RepoScoringInitation.deleteById(scinId);;
 		return "Successfully Update";
+	}
+	
+	public String getScorName(Integer ScorId) {
+		return RepoScoringInitation.getScorName(ScorId);
 	}
 
 }
