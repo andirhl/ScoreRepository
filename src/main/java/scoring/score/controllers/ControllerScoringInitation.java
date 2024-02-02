@@ -25,6 +25,11 @@ public class ControllerScoringInitation {
 		return servScoringInitation.getScorInitation();
 	}
 	
+	@GetMapping("/getscoringinitationvis")
+	public List<ScoringInitation> getScorInitVis(Integer ScorId, String vis){
+		return servScoringInitation.getScorInitVis(ScorId, vis);		
+	}
+	
 	@GetMapping("/getscorinitationid")
 	public Optional<ScoringInitation> getScorInitationId(Integer scinId) {
 		return servScoringInitation.getScorInitationId(scinId);
@@ -42,6 +47,11 @@ public class ControllerScoringInitation {
 	@DeleteMapping("/deletescorinitation")
 	public String deleteScoringInitation(Integer scinId) {
 		return servScoringInitation.deleteScoringInitation(scinId);
+	}
+	
+	@GetMapping("/getscorname")
+	public String getScorName(Integer ScorId) {
+		return servScoringInitation.getScorName(ScorId);
 	}
 
 }
