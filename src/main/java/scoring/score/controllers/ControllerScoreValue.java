@@ -24,10 +24,19 @@ public class ControllerScoreValue {
 	@Autowired
 	ServiceScoreValue servScVal;
 	
-	//@GetMapping("/scorevaluelist")
-	//public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
-		//return servScVal.getScoreValueList(bctId, bprId, typee);
-	//}
+	@GetMapping("/scorevaluelist")
+	public List<ScoreValue> getScoreValueList(Integer bctId, Integer bprId, String typee){
+		return servScVal.getScoreValueList(bctId, bprId, typee);
+	}
 	
+	@PostMapping("/addscorevalue")
+	public ScoreValue saveScoreValue(@RequestBody ScoreValue scValue){
+		return servScVal.saveScoreValue(scValue);
+	}
+	
+	@DeleteMapping("/delscorevalue")
+	public void delScoreValue (Integer scscId, Integer scscBctId, Integer scscBprId) {
+		servScVal.delScoreValue(scscId, scscBctId, scscBprId);
+	}
 
 }

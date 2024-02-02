@@ -3,6 +3,7 @@ package scoring.score.models;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.AllArgsConstructor;
@@ -16,14 +17,17 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name= "SCORE_VALUE")
+@IdClass(ScoreCompKey.class)
 public class ScoreValue {
 	@Id
 	@Column (name="SCSC_ID")
 	private Integer scscId;
 	
+	@Id
 	@Column (name="SCSC_BCT_ID")
 	private Integer scscBctId;
-	
+		
+	@Id
 	@Column (name="SCSC_BPR_ID")
 	private Integer scscBprId;
 	
@@ -34,7 +38,13 @@ public class ScoreValue {
 	private String scscType;
 	
 	@Column (name="SCSC_SCIN_ID")
-	private String scscScinId;
+	private Integer scscScinId;
+	
+	@Column (name="SCSC_FROM")
+	private Integer scscFrom;
+	
+	@Column (name="SCSC_TO")
+	private Integer scscTo;
 	
 	@Column (name="SCSC_SCORE")
 	private Integer scscScore;
