@@ -26,6 +26,11 @@ public class ControllerMsBaseQuery {
 		return buf;
 	}
 	
+	@GetMapping("/getbasequeryvis")
+	public List<MsBaseQuery> getBaseQueryVis(String vis){
+		return servBaseQuery.getBaseQueryVis(vis);		
+	}
+	
 	@GetMapping("/getbasequeryid")
 	public Optional<MsBaseQuery> getBaseQueryId(Integer mbqid) {
 		return servBaseQuery.getBaseQueryId(mbqid);
@@ -43,6 +48,16 @@ public class ControllerMsBaseQuery {
 	@DeleteMapping("/deleteMsBaseQuery")
 	public String deleteMsBaseQuery(Integer mbqId) {
 		return servBaseQuery.deleteMsBaseQuery(mbqId);
+	}
+	
+	@GetMapping("/getbasequeryname")
+	public String getQueryName(Integer mbqId) {
+		return servBaseQuery.getQueryName(mbqId);
+	}
+	
+	@GetMapping("/getbasequerydesc")
+	public String getQueryDesc(Integer mbqId) {
+		return servBaseQuery.getQueryDesc(mbqId);
 	}
 	
 }

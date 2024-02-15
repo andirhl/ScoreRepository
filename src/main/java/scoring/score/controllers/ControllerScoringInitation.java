@@ -53,5 +53,10 @@ public class ControllerScoringInitation {
 	public String getScorName(Integer ScorId) {
 		return servScoringInitation.getScorName(ScorId);
 	}
+	
+	@GetMapping("/getscorinitbybcnprd")
+	public List<ScoringInitation> getScorInitbyBCnPrd(Integer bctid,Integer bprid,String visible){
+		return servScoringInitation.getScorInitbyBCnPrd(bctid, bprid, visible);		
+	}
 
 }

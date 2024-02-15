@@ -42,5 +42,9 @@ public class ServiceScoringInitation {
 	public String getScorName(Integer ScorId) {
 		return RepoScoringInitation.getScorName(ScorId);
 	}
-
+    
+	public List<ScoringInitation> getScorInitbyBCnPrd(Integer bctid,Integer bprid,String visible){
+		return RepoScoringInitation.findByScinBctIdAndScinBprIdAndScinVisible(bctid, bprid, visible);		
+	}
+	
 }

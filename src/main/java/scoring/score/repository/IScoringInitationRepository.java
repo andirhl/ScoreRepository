@@ -17,4 +17,6 @@ public interface IScoringInitationRepository extends JpaRepository<ScoringInitat
 	List<ScoringInitation> findByScinIdAndScinVisible (Integer scinid,String visible  );
     
 	List<ScoringInitation> findByScinVisible (String vis);
+	
+	List<ScoringInitation> findByScinBctIdAndScinBprIdAndScinVisible (Integer bctid,Integer bprid,String visible  );
 }

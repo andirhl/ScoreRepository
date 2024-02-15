@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import scoring.score.models.MsBaseQuery;
 import scoring.score.models.MsTable;
+import scoring.score.models.ScoringInitation;
 import scoring.score.repository.IMsBaseQueryRepository;
 
 @Service
@@ -17,6 +18,10 @@ public class ServiceMsBaseQuery {
    
 	public List<MsBaseQuery> getBaseQuery(){
 		return repoBaseQuery.findAll();
+	}
+	
+	public List<MsBaseQuery> getBaseQueryVis(String vis){
+		return repoBaseQuery.findByMbqVisible(vis);		
 	}
 	
 	public Optional<MsBaseQuery> getBaseQueryId(Integer mbqid) {
@@ -34,4 +39,11 @@ public class ServiceMsBaseQuery {
 		return "Successfully Update";
 	}
 	
+	public String getQueryName(Integer mbqId) {
+		return repoBaseQuery.getQueryName(mbqId);
+	}
+	
+	public String getQueryDesc(Integer mbqId) {
+		return repoBaseQuery.getQueryDesc(mbqId);
+	}
 }
