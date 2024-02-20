@@ -59,4 +59,5 @@ public class ControllerScoringInitation {
 		return servScoringInitation.getScorInitbyBCnPrd(bctid, bprid, visible);		
 	}
 
+	
 }
