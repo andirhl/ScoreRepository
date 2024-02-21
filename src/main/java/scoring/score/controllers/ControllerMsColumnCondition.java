@@ -1,3 +1,4 @@
+
 package scoring.score.controllers;
 
 import java.util.List;
@@ -44,5 +45,10 @@ public class ControllerMsColumnCondition {
 	@DeleteMapping("/deleteMsColumnCondition")
 	public String deleteMsColumnCondition(Integer mccId) {
 		return servMsColumnCondition.deleteMstColCond(mccId);
+	}
+	
+	@GetMapping("/getmccmstcid")
+	public Optional<MsColumnCondition> getByMccMstcId(Integer mccmstcId) {
+		return servMsColumnCondition.getByMccId(mccmstcId);
 	}
 }

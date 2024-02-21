@@ -16,9 +16,8 @@ public interface IScoreValueRepository extends  JpaRepository<ScoreValue,Integer
 	List<ScoreValue> findByScscBctIdAndScscBprIdAndScscType(Integer bctId, Integer bprId, String typee);
 	
 	ScoreValue findByscscId(Integer scscId);
-	
+
 	@Modifying
 	void deleteByScscIdAndScscBctIdAndScscBprId(Integer scscId, Integer bctId, Integer bprId);
-	
-	
+
 }

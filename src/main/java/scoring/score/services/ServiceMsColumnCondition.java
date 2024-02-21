@@ -36,4 +36,9 @@ public class ServiceMsColumnCondition {
 		repoMsColumnCondition.deleteById(mccId);
 		return "Successfully Update";
 	}
+
+	
+	public Optional<MsColumnCondition> getByMccMstcId(Integer mccmstcId) {
+		return repoMsColumnCondition.findById(mccmstcId);
+	}
 }

@@ -18,6 +18,7 @@ public class ServiceScoreValue {
 		return repoScoVal.findByScscBctIdAndScscBprIdAndScscType(bctId, bprId, typee );
 	}
 	
+
 	public List<ScoreValue> getScoreValueAllList(){
 		return repoScoVal.findAll();
 	}
@@ -29,7 +30,8 @@ public class ServiceScoreValue {
 	public String saveScoreValue(ScoreValue scValue){
 		 repoScoVal.save(scValue);
 		 return "Submit Successfuly";
-	}
+
+
 	
 	@Transactional
 	public void delScoreValue (Integer scscId, Integer scscBctId, Integer scscBprId) {

@@ -35,4 +35,10 @@ public class ServiceMsTable {
 		repoMsTable.deleteById(msId);
 		return "Successfully Update";
 	}
+
+	
+	public String getMstName(Integer id) {
+		return repoMsTable.getMstNameDesc(id);
+	}
+	
 }

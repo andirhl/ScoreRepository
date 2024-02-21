@@ -37,4 +37,9 @@ public class ServiceMsTableColumn {
 		return "Successfully Update";
 	}
 
+	
+	public Optional<MsTableColumn> getByMstcMsId(Integer mstcmsId) {
+		return repoMsTableColumn.findById(mstcmsId);
+	}
+
 }

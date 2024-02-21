@@ -29,6 +29,7 @@ public class ControllerScoreValue {
 		return servScVal.getScoreValueList(bctId, bprId, typee);
 	}
 	
+
 	@GetMapping("/allscorevaluelist")
 	public List<ScoreValue> getScoreValueAllList(){
 		return servScVal.getScoreValueAllList();
@@ -47,7 +48,6 @@ public class ControllerScoreValue {
 	public void delScoreValue (Integer scscId, Integer scscBctId, Integer scscBprId) {
 		servScVal.delScoreValue(scscId, scscBctId, scscBprId);
 	}
-	
 	
 
 }

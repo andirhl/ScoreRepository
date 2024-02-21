@@ -23,16 +23,17 @@ public class ScoreValue {
 	@Column (name="SCSC_ID")
 	private Integer scscId;
 	
-	
+	@Id
 	@Column (name="SCSC_BCT_ID")
 	private Integer scscBctId;
 		
-	
+	@Id
 	@Column (name="SCSC_BPR_ID")
 	private Integer scscBprId;
 	
 	@Column (name="SCSC_DESC", length=60)
-	private String scscDesc;
+	private String scscBprDesc;
+
 	
 	@Column (name="SCSC_TYPE")
 	private String scscType;
