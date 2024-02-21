@@ -7,5 +7,7 @@ import scoring.score.models.MsTable;
 
 @Repository
 public interface IMsTableRepository extends JpaRepository<MsTable, Integer> {
+	@Query("select s.mstName from MsTable s where s.mstId=?1")
+	String getMstNameDesc (Integer id);
 
 }

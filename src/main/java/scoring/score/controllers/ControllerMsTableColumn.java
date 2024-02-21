@@ -46,4 +46,9 @@ public class ControllerMsTableColumn {
 		return servMsTableColumn.deleteMstTableColumn(mstcId);
 	}
 	
+	@GetMapping("/getmstcmstid")
+	public Optional<MsTableColumn> getByMstcMstId(Integer mstcmstId) {
+		return servMsTableColumn.getByMstcId(mstcmstId);
+	}
+	
 }
