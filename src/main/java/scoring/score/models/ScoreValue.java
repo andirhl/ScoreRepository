@@ -17,7 +17,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name= "SCORE_VALUE")
-//@IdClass(ScoreCompKey.class)
+@IdClass(ScoreCompKey.class)
 public class ScoreValue {
 	@Id
 	@Column (name="SCSC_ID")
