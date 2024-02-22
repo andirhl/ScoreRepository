@@ -48,7 +48,7 @@ public class ControllerMsColumnCondition {
 	}
 	
 	@GetMapping("/getmccmstcid")
-	public Optional<MsColumnCondition> getByMccMstcId(Integer mccmstcId) {
-		return servMsColumnCondition.getByMccId(mccmstcId);
+	public List<MsColumnCondition> getByMccMstcId(Integer mctcId) {
+		return servMsColumnCondition.getByMccMstcId(mctcId);
 	}
 }

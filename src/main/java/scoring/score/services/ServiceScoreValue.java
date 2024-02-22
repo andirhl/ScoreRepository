@@ -30,7 +30,7 @@ public class ServiceScoreValue {
 	public String saveScoreValue(ScoreValue scValue){
 		 repoScoVal.save(scValue);
 		 return "Submit Successfuly";
-
+	}
 
 	
 	@Transactional

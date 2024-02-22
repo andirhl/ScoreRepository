@@ -10,5 +10,7 @@ import scoring.score.models.MsColumnCondition;
 
 @Repository
 public interface IMsColumnConditionRepository extends JpaRepository<MsColumnCondition, Integer> {
+	
+	List<MsColumnCondition> findByMccmstcId (Integer mctcId);
 
 }

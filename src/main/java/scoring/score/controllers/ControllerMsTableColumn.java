@@ -46,11 +46,14 @@ public class ControllerMsTableColumn {
 		return servMsTableColumn.deleteMstTableColumn(mstcId);
 	}
 	
-
-	@GetMapping("/getmstcmstid")
+	/*@GetMapping("/getmstcmstid")
 	public Optional<MsTableColumn> getByMstcMstId(Integer mstcmstId) {
 		return servMsTableColumn.getByMstcId(mstcmstId);
-	}
+	}*/
 	
+	@GetMapping("/getmstcmstid")
+	public String getMstcMstId(Integer Id) {
+		return servMsTableColumn.getMstcMsId(Id);
+	}
 
 }

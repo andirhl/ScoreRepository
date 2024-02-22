@@ -45,7 +45,6 @@ public class ControllerMsTable {
 	public String deleteMsTable(Integer msId) {
 		return servMsTable.deleteMstTable(msId);
 	}
-
 	
 	@GetMapping("/getmstname")
 	public String getMstName(Integer msId) {
