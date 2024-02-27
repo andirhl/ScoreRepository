@@ -40,17 +40,17 @@ public class ScoreValueMulti {
 	@Column (name="SVM_VISBLE")
 	private String svmVisible;
 	
-	@Column (name="SVM_CREATE_BY")
-	private Integer svmCreateBy;
+	@Column (name="SVM_CREATE_BY", length=20)
+	private String svmCreateBy;
 	
 	@Column (name="SVM_CREATE_DATE")
-	private String svmCreateDate;
+	private Date svmCreateDate;
 	
-	@Column (name="SVM_UPDATE_BY")
-	private Integer svmUpdateBy;
+	@Column (name="SVM_UPDATE_BY", length=20)
+	private String svmUpdateBy;
 	
 	@Column (name="SVM_UPDATE_DATE")
-	private String svmUpdateDate;
+	private Date svmUpdateDate;
 
 	    
 

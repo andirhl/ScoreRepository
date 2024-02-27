@@ -10,6 +10,9 @@ import scoring.score.models.ScoreValueMulti;
 import scoring.score.models.ScoreValueMultiCompKey;
 
 @Repository
-public interface IScoreValueMultiRepository extends  JpaRepository<ScoreValueMulti,ScoreValueMultiCompKey> {
+public interface IScoreValueMultiRepository extends  JpaRepository<ScoreValueMulti,Integer> {
+	List<ScoreValueMulti> findBySvmScscId (Integer scId);
+	
+	ScoreValueMulti findBySvmIdAndSvmScscId (Integer svmid, Integer svmscscid);
 
 }

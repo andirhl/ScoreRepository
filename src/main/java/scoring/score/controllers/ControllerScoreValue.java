@@ -19,7 +19,6 @@ import scoring.score.services.ServiceBussinessCategory;
 import scoring.score.services.ServiceScoreValue;
 
 @RestController
-
 public class ControllerScoreValue {
 	@Autowired
 	ServiceScoreValue servScVal;
