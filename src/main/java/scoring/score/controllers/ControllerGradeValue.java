@@ -13,27 +13,28 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.yaml.snakeyaml.events.Event.ID;
 
-import scoring.score.models.GradeGroup;
-import scoring.score.services.ServiceGradeGroup;
+import scoring.score.models.GradeValue;
+import scoring.score.services.ServiceGradeValue;
 
 @RestController
-public class ControllerGradeGroup {
+public class ControllerGradeValue {
 	@Autowired
-	ServiceGradeGroup servGrGr;
+	ServiceGradeValue servGrVl;
 	
-	@GetMapping("/gradegrouplist")
-	public List<GradeGroup> getGradeGroupList(){
-		return servGrGr.getGradeGroupList();
+	@GetMapping("/getgradevaluelist")
+	public  List<GradeValue> getGradeValueList (Integer grId) {
+		return servGrVl.getGradeValueList(grId);
 	}
 	
-	@GetMapping("/gradegroupsingle")
-	public  Optional<GradeGroup> getGradeGroupSingle(Integer grid){
-		return servGrGr.getGradeGroupSingle(grid);
+	@GetMapping("/getgradevaluesingle")
+	public Optional<GradeValue> getGradeValueSingle (Integer grId, Integer grVlId) {
+		return servGrVl.getGradeValueSingle(grId, grVlId);
 	}
 	
-	@PostMapping("/saveupdategroup")
-	public String addUpdateGroup(@RequestBody GradeGroup grgr) {
-		return servGrGr.addUpdateGroup(grgr);
+	@PostMapping("/saveUpdateGradeValue")
+	public String addupdateGradeValue(@RequestBody  GradeValue grval) {		
+		return servGrVl.addupdateGradeValue(grval);
 	}
+	
 
 }

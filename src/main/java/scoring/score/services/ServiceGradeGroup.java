@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import scoring.score.models.GradeGroup;
 import scoring.score.repository.IGradeGroupRepository;
 
-
-
 @Service
 public class ServiceGradeGroup {
 	@Autowired
@@ -22,9 +20,16 @@ public class ServiceGradeGroup {
 		return repoGrGr.findAll();
 	}
 	
-	public GradeGroup getGradeGroupSingle(Integer grid){
-		return repoGrGr.getById(grid);
+	public Optional<GradeGroup> getGradeGroupSingle(Integer grid){
+		return repoGrGr.findById(grid);
 	}
+	
+	public String addUpdateGroup(GradeGroup grgr) {
+		repoGrGr.save(grgr);
+		return "Submit Successfully";
+	}
+	
+	
 	
 	
 }

@@ -1,0 +1,20 @@
+package scoring.score.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import scoring.score.models.GradeValue;
+import scoring.score.models.GradeValueCompKey;
+
+@Repository
+public interface IGradeValueRepository extends JpaRepository<GradeValue,GradeValueCompKey>{
+	
+	List<GradeValue> findByGrGrvlGrGrIdOrderByGrGrvlId (Integer grId);
+	
+	Optional<GradeValue> findByGrGrvlGrGrIdAndGrGrvlIdOrderByGrGrvlId (Integer grId, Integer grVlId);
+
+}
