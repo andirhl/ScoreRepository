@@ -14,5 +14,10 @@ public interface IMsTableColumnRepository extends JpaRepository<MsTableColumn, I
 	
 	@Query("select s.mstcmstId from MsTableColumn s where s.mstcId=?1")
 	public String getMstcMstId(Integer Id);
+	
+	@Query("select s.mstcName from MsTableColumn s where s.mstcId=?1")
+	String getMstcNameDesc(Integer Id);
+	
+	List<MsTableColumn> findByMstcmstId (Integer Id);
 
 }

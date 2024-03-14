@@ -55,5 +55,15 @@ public class ControllerMsTableColumn {
 	public String getMstcMstId(Integer Id) {
 		return servMsTableColumn.getMstcMsId(Id);
 	}
+	
+	@GetMapping("/getmstcname")
+	public String getMstcName(Integer Id) {
+		return servMsTableColumn.getMstcName(Id);
+	}
+	
+	@GetMapping("/getmstabcolbymstid")
+	public List<MsTableColumn> getmstablecolumn(Integer id){
+		return servMsTableColumn.getMsTableColumnList(id);
+	}
 
 }

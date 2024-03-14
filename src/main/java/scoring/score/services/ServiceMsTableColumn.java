@@ -44,5 +44,13 @@ public class ServiceMsTableColumn {
 	public String getMstcMsId(Integer id) {
 		return repoMsTableColumn.getMstcMstId(id);
 	}
+	
+	public String getMstcName(Integer id) {
+		return repoMsTableColumn.getMstcNameDesc(id);
+	}
+	
+	public List<MsTableColumn> getMsTableColumnList(Integer id){
+		return repoMsTableColumn.findByMstcmstId(id);
+	}
 
 }
