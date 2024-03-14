@@ -33,6 +33,7 @@ public class ControllerScoreValue {
 	public List<ScoreValue> getScoreValueAllList(){
 		return servScVal.getScoreValueAllList();
 	}
+	
 	@GetMapping("/allscorevaluesingle")
 	public ScoreValue getScoreValueSingle(Integer scscId ){
 		return servScVal.getScoreValueSingle(scscId);
