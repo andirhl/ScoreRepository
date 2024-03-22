@@ -41,6 +41,6 @@ public class MsTableColumn {
 	private Date mstcUpdatedDate;
 	
 	@Column (name="MSTC_ALIAS_NAME")
-	private Integer mstcAliasName;
+	private String mstcAliasName;
 
 }
