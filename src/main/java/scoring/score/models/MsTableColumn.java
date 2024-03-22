@@ -39,5 +39,8 @@ public class MsTableColumn {
 	
 	@Column (name="MSTC_UPDATED_DATE")
 	private Date mstcUpdatedDate;
+	
+	@Column (name="MSTC_ALIAS_NAME")
+	private Integer mstcAliasName;
 
 }
