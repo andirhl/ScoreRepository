@@ -42,5 +42,8 @@ public class MsTableColumn {
 	
 	@Column (name="MSTC_ALIAS_NAME")
 	private String mstcAliasName;
+	
+	@Column (name="MSTC_RETURN_TRUE_FALSE")
+	private String mstcRetTrueFalse;
 
 }

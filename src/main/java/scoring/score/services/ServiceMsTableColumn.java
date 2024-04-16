@@ -52,5 +52,9 @@ public class ServiceMsTableColumn {
 	public List<MsTableColumn> getMsTableColumnList(Integer id){
 		return repoMsTableColumn.findByMstcmstId(id);
 	}
+	
+	public String getMstcAlias(Integer id) {
+		return repoMsTableColumn.getMstcAlias(id);
+	}
 
 }

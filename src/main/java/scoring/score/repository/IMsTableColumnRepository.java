@@ -19,5 +19,7 @@ public interface IMsTableColumnRepository extends JpaRepository<MsTableColumn, I
 	String getMstcNameDesc(Integer Id);
 	
 	List<MsTableColumn> findByMstcmstId (Integer Id);
-
+	
+	@Query("select s.mstcAliasName from MsTableColumn s where s.mstcId=?1")
+	String getMstcAlias(Integer Id);
 }
