@@ -46,6 +46,9 @@ public class BussinessProduct {
 	private String bprUpdatedUser;
 	
 	@Column (name="BPR_UPDATED_DATE")
-	private Date bprUpdatedDate;	
+	private Date bprUpdatedDate;
+	
+	@Column (name="BPR_COY_ID",length=5)
+	private String bprCoyId;
 
 }

@@ -41,5 +41,8 @@ public class MsParam {
 	
 	@Column (name="MSP_LASTUPDATE_DATE")
 	private Date mspLastupdateDate;
+	
+	@Column (name="MSP_COY_ID",length=5)
+	private String mspCoyId;
 
 }

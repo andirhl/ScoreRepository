@@ -45,5 +45,8 @@ public class MsTableColumn {
 	
 	@Column (name="MSTC_RETURN_TRUE_FALSE")
 	private String mstcRetTrueFalse;
+	
+	@Column (name="MSTC_COY_ID",length=5)
+	private String mstcCoyId;
 
 }

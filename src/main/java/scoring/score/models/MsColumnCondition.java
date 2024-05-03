@@ -59,6 +59,9 @@ public class MsColumnCondition {
 	
 	@Column (name="MCC_UPDATED_DATE")
 	private Date mccUpdatedDate;
+	
+	@Column (name="MCC_COY_ID",length=5)
+	private String mccCoyId;
 
 	
 

@@ -51,6 +51,9 @@ public class ScoreValueMulti {
 	
 	@Column (name="SVM_UPDATE_DATE")
 	private Date svmUpdateDate;
+	
+	@Column (name="SVM_COY_ID", length=5)
+	private String svmCoyId;
 
 	    
 

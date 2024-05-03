@@ -41,5 +41,8 @@ public class MsBaseQuery {
 	
 	@Column (name="MBQ_UPDATED_DATE")
 	private Date mbqUpdatedDate;
+	
+	@Column (name="MBQ_COY_ID",length=5)
+	private String mbqCoyId;
 
 }

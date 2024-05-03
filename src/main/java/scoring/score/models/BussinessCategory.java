@@ -41,5 +41,8 @@ public class BussinessCategory {
 	
 	@Column (name="BCT_UPDATED_DATE")
 	private Date bctUpdatedDate;
+	
+	@Column (name="BCT_COY_ID",length=5)
+	private String bctCoyId;
 
 }

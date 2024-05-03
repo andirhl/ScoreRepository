@@ -67,5 +67,8 @@ public class ScoreValue {
 	
 	@Column (name="SCSC_UPDATED_DATE")
 	private Date scscUpdatedDate;
+	
+	@Column (name="SCSC_COY_ID", length=5)
+	private String scscCoyId;
 
 }
