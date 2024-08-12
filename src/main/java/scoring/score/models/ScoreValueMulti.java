@@ -34,8 +34,8 @@ public class ScoreValueMulti {
 	@Column (name="SVM_VALUE_TO")
 	private Integer svmValueTo;
 	
-	@Column (name="SVM_SCORE")
-	private Integer svmScore;
+	@Column (name="SVM_SCORE", length=20)
+	private String svmScore;
 	
 	@Column (name="SVM_VISBLE")
 	private String svmVisible;
