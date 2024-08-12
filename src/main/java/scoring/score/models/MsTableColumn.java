@@ -39,5 +39,14 @@ public class MsTableColumn {
 	
 	@Column (name="MSTC_UPDATED_DATE")
 	private Date mstcUpdatedDate;
+	
+	@Column (name="MSTC_ALIAS_NAME")
+	private String mstcAliasName;
+	
+	@Column (name="MSTC_RETURN_TRUE_FALSE")
+	private String mstcRetTrueFalse;
+	
+	@Column (name="MSTC_COY_ID",length=5)
+	private String mstcCoyId;
 
 }

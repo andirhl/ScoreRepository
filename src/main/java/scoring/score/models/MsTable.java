@@ -37,5 +37,8 @@ public class MsTable {
 	
 	@Column (name="MST_UPDATED_DATE")
 	private Date mstUpdatedDate;
+	
+	@Column (name="MST_COY_ID",length=5)
+	private String mstCoyId;
 
 }

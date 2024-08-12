@@ -59,5 +59,8 @@ public class GradeGroup {
 	
 	@Column (name="GRGR_UPDATE_DATE")
 	private Date grGrUpdateDate;
+	
+	@Column (name="GRGR_COY_ID", length=5)
+	private String grGrCoyId;
 
 }

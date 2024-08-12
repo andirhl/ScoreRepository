@@ -49,4 +49,7 @@ public class GradeValue {
 	@Column (name="GRVL_UPDATE_DATE", length=20)
 	private Date grGrvlUpdateDate;
 	
+	@Column (name="GRVL_COY_ID", length=5)
+	private String grGrvlCoyId;
+	
 }

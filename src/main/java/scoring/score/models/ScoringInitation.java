@@ -57,5 +57,8 @@ public class ScoringInitation {
 	
 	@Column (name="SCIN_APPROVED_DATE")
 	private Date scinApprovedDate;
+	
+	@Column (name="SCIN_COY_ID",length=5)
+	private String scinCoyId;
 
 }
